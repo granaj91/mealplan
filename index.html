@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style/main.css">
+        <script src="meal-planner.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <div>
+                    <h2>Weekly Meal Plan</h2>
+                </div>
+                <div class="week-container">
+                    <div>
+                        <h4>Sunday</h4>
+                        <textarea id="meals" placeholder="Breakfast:&#10Lunch:&#10Dinner:&#10"></textarea>
+                    </div>
+                    <div>
+                        <h4>Monday</h4>
+                        <textarea id="meals" placeholder="Breakfast:&#10Lunch:&#10Dinner:&#10"></textarea>
+                    </div>
+                    <div>
+                        <h4>Tuesday</h4>                        
+                        <textarea id="meals" placeholder="Breakfast:&#10Lunch:&#10Dinner:&#10"></textarea>
+                    </div>
+                    <div>
+                        <h4>Wednesday</h4>
+                        <textarea id="meals" placeholder="Breakfast:&#10Lunch:&#10Dinner:&#10"></textarea>
+                    </div>
+                    <div>
+                        <h4>Thursday</h4>
+                        <textarea id="meals" placeholder="Breakfast:&#10Lunch:&#10Dinner:&#10"></textarea>
+                    </div>
+                    <div>
+                        <h4>Friday</h4>
+                        <textarea id="meals" placeholder="Breakfast:&#10Lunch:&#10Dinner:&#10"></textarea>
+                    </div>
+                    <div>
+                        <h4>Saturday</h4>
+                        <textarea id="meals" placeholder="Breakfast:&#10Lunch:&#10Dinner:&#10"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>Grocery List</h2>
+                        <input id="item" type="text" placeholder="Enter grocery item" required>
+                        <select id="category" id="dropdown" required>
+                            <option disable selected value>Select category</option>
+                            <option value="Baking/Spices/Condiments">Baking/Spices/Condiments</option>
+                            <option value="Bakery/Deli">Bakery/Deli</option>
+                            <option value="Canned Goods">Canned Goods</option>
+                            <option value="Frozen">Frozen</option>
+                            <option value="Meat/Poultry/Fish">Meat/Poultry/Fish</option>
+                            <option value="Pasta/Rice">Pasta/Rice</option>
+                            <option value="Produce">Produce</option>
+                            <option value="Refrigerated">Refrigerated</option>
+                            <option value="Snacks/Beverages">Snacks/Beverages</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <input type="submit" onclick="addGrocery()" value="Add grocery item">
+                </div>
+                <div id="grocery-container">
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
